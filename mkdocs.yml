@@ -1,1 +1,5 @@
-site_name: My Docs
+site_name: HajiWeb
+site_url: https://jayi0908.github.io/jayi0908-trigonometry/
+
+theme:
+  name: material
