@@ -65,5 +65,5 @@ extra:
   generator: false
 
 extra_css:
-  - https://cdn.jsdelivr.net/gh/jayi0908/HajiWeb@master/docs/css/custom.css
+  - ./css/custom.css
   # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
