@@ -4,12 +4,12 @@ copyright: Copyright &copy; 2025-? jayi0908
 
 theme:
   name: material
-  custom_dir: docs/custom
+  custom_dir: overrides
   language: 'zh'
   icon:
     top: material/arrow-up-thin
   logo: icons/eihei.png
-  favicon: icons/favicon.png
+  favicon: icons/favicon.ico
   features:
     - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
     - navigation.tabs.sticky # 滚动是隐藏顶部nav，需要配合navigation.tabs使用
@@ -18,9 +18,6 @@ theme:
     - navigation.top # 允许返回顶部
     - navigation.footer # 允许页脚导航
     - navigation.prune # 侧边栏自动折叠
-    - navigation.instant 
-    - navigation.instant.prefetch
-    - navigation.instant.progress
     - navigation.tracking # 在url中使用标题定位锚点
     - toc.follow # toc 跟随
   palette:
@@ -50,21 +47,23 @@ markdown_extensions:
       generic: true # 允许使用通用的数学公式
   - attr_list
   - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   # - statistics:
       # words_per_minute: 200
-  - search: 
-      lang: [zh, en]
-      separator: '[\s\u200b\-]'
-      jieba_dict:  # 自定义中文分词词典
+  # - search: 
+  #     lang: [zh, en]
+  #     separator: '[\s\u200b\-]'
+  #     jieba_dict:  # 自定义中文分词词典
+  - minify:
+      minify_html: true
 
 extra:
   generator: false
 
 extra_css:
-  - ./custom/custom.css
-  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - https://cdn.jsdelivr.net/gh/jayi0908/HajiWeb@master/docs/css/custom.css
+  # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
