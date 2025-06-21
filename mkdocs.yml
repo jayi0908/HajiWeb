@@ -65,5 +65,8 @@ extra:
   generator: false
 
 extra_css:
-  - ./css/custom.css
-  # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - ./assets/css/custom.css
+#   # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+
+extra_javascript:
+  - ./assets/javascripts/font-loader.js 
