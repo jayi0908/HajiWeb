@@ -17,7 +17,7 @@ body {
 
 @font-face{
     font-family: "LXGWWenKaiScreen";
-    src: url('../../fonts/LXGWWenKaiScreen.woff2');
+    src: url('../../fonts/LXGWWenKaiScreen-subset.woff2');
     font-weight: normal;
 }
 
