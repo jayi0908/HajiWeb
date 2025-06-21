@@ -1,27 +1,4 @@
-/*
- * ZSFT 英文子集化选项
- * AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890 ,.!?:;-
- */
-
-/* @font-face {
-    font-family: "ZSFT-ENMin-292";
-    src: url("https://fontsapi.zeoseven.com/292/main.woff2") format('woff2'),
-        url("https://fontsapi-storage.zeoseven.com/292/main.woff2") format('woff2');
-    unicode-range: U+0061-007A, U+0041-005A, U+0030-0039, U+002E, U+002C, U+0021, U+003F, U+003A, U+003B, U+002D;
-}
-
 body {
-    font-family: "ZSFT-ENMin-292";
-    font-weight: normal;
-} */
-
-@font-face{
-    font-family: "LXGWWenKaiScreen";
-    src: url('../../fonts/LXGWWenKaiScreen-subset.woff2');
-    font-weight: normal;
-}
-
-body {
-    font-family: "LXGWWenKaiScreen", sans-serif;
+    font-family: "LXGW WenKai Screen", sans-serif;
     font-weight: normal;
 }
