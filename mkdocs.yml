@@ -4,7 +4,6 @@ copyright: Copyright &copy; 2025-? jayi0908
 
 theme:
   name: material
-  custom_dir: overrides
   language: 'zh'
   icon:
     top: material/arrow-up-thin
@@ -47,27 +46,11 @@ markdown_extensions:
       generic: true # 允许使用通用的数学公式
   - attr_list
   - md_in_html
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-plugins:
-  # - statistics:
-      # words_per_minute: 200
-  # - search: 
-  #     lang: [zh, en]
-  #     separator: '[\s\u200b\-]'
-  #     jieba_dict:  # 自定义中文分词词典
-  - minify:
-      minify_html: true
 
 extra:
-  generator: false
+  generator: true
 
 extra_css:
   - ./assets/css/custom.css
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
-#   # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
-
-# extra_javascript:
-#   - ./assets/javascripts/font-loader.js 
+#  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
